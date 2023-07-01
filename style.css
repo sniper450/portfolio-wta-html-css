@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: blanchedalmond;
+  width: 100%;
+  min-height: 100vh;
+  
+}
+
+.container {
+  max-width: 85rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+section {
+  background-color: blanchedalmond;
+}
+
+
+
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  z-index: 30;
+  background-color: rgb(20, 20, 19);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-left: 2.5rem;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(146, 145, 143);
+}
+
+nav ul li a:hover {
+  color: orange;
+}
+
+nav ul li .active {
+  color: orange;
+}
+
+.logo,
+.logo span {
+  color: rgb(146, 145, 143);
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.logo span {
+    color: orange;
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+.dete1 {
+  margin-left: 8%;
+  margin-top: 25%;
+}
+
+.dete1 h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+span {
+  color: orange;
+  font-weight: 300;
+}
+.buttons {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.container1{
+    top: 100px;
+    position: relative;
+    width: 100%;
+    padding: 35px 10%;
+
+}
+.col header.title{
+    font-family:Helvetica;
+    color: #a36411;
+    padding: 0px 0px 20px 30px ;
+}
+.col .contents{
+    padding: 0px 30px;
+    border-left:2px solid #bababa;
+}
+
+.col .contents .box{
+    
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaee;
+    background-color: #ffffff;
+    cursor:pointer;
+    transition: all 0.4s;
+    margin-bottom:20px ;
+
+}
+.col .contents .box a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+    background-color: rgb(218, 165, 90);
+}
+.col .contents .box::before{
+    content:'';
+    position:absolute;
+    width: 16px;
+    height:16px;
+    border-radius: 50%;
+    right :calc(100% + 22px);
+    top:0;
+    background-color: #a36411;
+    border: 2px solid white;
+
+}
+
+
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+.images img {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images .person {
+  width: 400px;
+  height: 400px;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover .person {
+  left: 45%;
+}
+
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+/* ... Your existing CSS code ... */
+
+.visitor-count {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ... Your existing CSS code ... */
+
+
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+
